@@ -1,0 +1,7 @@
+{
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "email_user": "ejgonzalez@renconsultores.com.co",
+    "email_password": "Sara2803@*",
+    "alert_recipient": "ejgonzalez@renconsultores.com.co"
+}

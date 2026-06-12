@@ -1,0 +1,34 @@
+# GUÍA DE CONFIGURACIÓN SMTP (Para Alertas por Correo)
+
+Para que el sistema envíe correos automáticos, debes configurar el servidor SMTP en XAMPP.
+
+## 1. Editar `php.ini`
+1. Ve a `C:\xampp\php\php.ini`.
+2. Busca la sección `[mail function]`.
+3. Edita los valores para usar tu proveedor (ej. Gmail, Outlook o SMTP corporativo).
+
+### Ejemplo para SMTP Corporativo sin SSL:
+```ini
+SMTP = mail.tuempresa.com
+smtp_port = 25
+sendmail_from = monitor@tuempresa.com
+```
+
+## 2. (Opcional) Usar Gmail con `sendmail`
+Si necesitas usar Gmail, XAMPP incluye "sendmail". Configura `C:\xampp\sendmail\sendmail.ini`:
+
+```ini
+smtp_server=smtp.gmail.com
+smtp_port=587
+auth_username=tucorreo@gmail.com
+auth_password=tu_contraseña_aplicacion
+force_sender=tucorreo@gmail.com
+```
+
+Y en `php.ini`:
+```ini
+sendmail_path = "\"C:\xampp\sendmail\sendmail.exe\" -t"
+```
+
+## 3. Reiniciar Apache
+Después de guardar los cambios, reinicia Apache desde el Panel de Control de XAMPP para que surtan efecto.

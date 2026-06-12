@@ -1,0 +1,24 @@
+{
+  "mikrotik": {
+    "host": "10.24.0.1",
+    "username": "Ejgonzalez",
+    "password": "Sara28031610"
+  },
+  "database": {
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "database": "ren_monitor"
+  },
+  "email": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "email_user": "ejgonzalez@renconsultores.com.co",
+    "email_password": "Sara2803@*",
+    "alert_recipient": "ejgonzalez@renconsultores.com.co",
+    "cooldown": 300
+  },
+  "theme": {
+    "current_theme": "dark"
+  }
+}
